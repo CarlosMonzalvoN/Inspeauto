@@ -18,7 +18,7 @@
 		DBCD066023F5FAB200EDA60D /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD065F23F5FAB200EDA60D /* SingUpViewController.swift */; };
 		DBCD066223F5FACA00EDA60D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD066123F5FACA00EDA60D /* LoginViewController.swift */; };
 		DBCD066423F5FAE000EDA60D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD066323F5FAE000EDA60D /* HomeViewController.swift */; };
-		DBFB9C0623F6055B007C2A83 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB9C0523F6055B007C2A83 /* Utilities.swift */; };
+		DBE2CB8623F6B083007BB6BC /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2CB8523F6B083007BB6BC /* Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		DBCD065F23F5FAB200EDA60D /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 		DBCD066123F5FACA00EDA60D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBCD066323F5FAE000EDA60D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		DBFB9C0523F6055B007C2A83 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ../../../../../../Downloads/CustomLoginDemo/CustomLoginDemo/Helpers/Utilities.swift; sourceTree = "<group>"; };
+		DBE2CB8523F6B083007BB6BC /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +107,11 @@
 		DBCD062E23F5F96700EDA60D /* AutoInspector */ = {
 			isa = PBXGroup;
 			children = (
-				DBCD066523F5FAE700EDA60D /* ViewControllers */,
 				DBCD062F23F5F96700EDA60D /* AppDelegate.swift */,
-				DBFB9C0523F6055B007C2A83 /* Utilities.swift */,
 				DBCD063123F5F96700EDA60D /* SceneDelegate.swift */,
 				DBCD063523F5F96700EDA60D /* Main.storyboard */,
+				DBFB9C0823F6AE65007C2A83 /* Helpers */,
+				DBCD066523F5FAE700EDA60D /* ViewControllers */,
 				DBCD063823F5F96C00EDA60D /* Assets.xcassets */,
 				DBCD063A23F5F96C00EDA60D /* LaunchScreen.storyboard */,
 				DBCD063D23F5F96C00EDA60D /* Info.plist */,
@@ -146,6 +146,14 @@
 				DBCD066323F5FAE000EDA60D /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBFB9C0823F6AE65007C2A83 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBE2CB8523F6B083007BB6BC /* Styles.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBCD063423F5F96700EDA60D /* ViewController.swift in Sources */,
+				DBE2CB8623F6B083007BB6BC /* Styles.swift in Sources */,
 				DBCD063023F5F96700EDA60D /* AppDelegate.swift in Sources */,
-				DBFB9C0623F6055B007C2A83 /* Utilities.swift in Sources */,
 				DBCD066023F5FAB200EDA60D /* SingUpViewController.swift in Sources */,
 				DBCD066223F5FACA00EDA60D /* LoginViewController.swift in Sources */,
 				DBCD063223F5F96700EDA60D /* SceneDelegate.swift in Sources */,
