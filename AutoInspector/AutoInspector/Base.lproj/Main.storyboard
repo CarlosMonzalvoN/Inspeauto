@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pdw-DW-w3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2404" y="137"/>
+            <point key="canvasLocation" x="2399" y="242"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="HLZ-Ac-uTf">
