@@ -1,0 +1,6 @@
+framework module Pods_AutoInspector {
+  umbrella header "Pods-AutoInspector-umbrella.h"
+
+  export *
+  module * { export * }
+}

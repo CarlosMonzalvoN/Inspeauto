@@ -45,8 +45,11 @@ class Styles {
         button.tintColor = UIColor.black
     }
     
+    
+    //Funcion que valida la contraseña
     static func isPasswordValid(_ password : String) -> Bool {
         
+        //Expresion regular con la que validaremos el formato de la contraseña
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         
         

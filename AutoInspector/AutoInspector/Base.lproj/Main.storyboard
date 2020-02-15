@@ -68,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2lV-X9-q7n">
-                                <rect key="frame" x="40" y="84" width="334" height="370.5"/>
+                                <rect key="frame" x="40" y="84" width="334" height="415"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre (s)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oar-pX-2tS">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -100,8 +100,11 @@
                                             <action selector="signUpTapped:" destination="Gcq-51-nmj" eventType="touchUpInside" id="SmC-T7-HbN"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ly-TP-Vhg">
-                                        <rect key="frame" x="0.0" y="350" width="334" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ly-TP-Vhg">
+                                        <rect key="frame" x="0.0" y="350" width="334" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="Nor-GX-Sny"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -135,12 +138,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znQ-Ha-Nyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532" y="-101"/>
+            <point key="canvasLocation" x="1531.8840579710145" y="-101.11607142857143"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="sUs-Fb-1ac">
             <objects>
-                <viewController id="tLD-sW-W99" customClass="HomeViewController" customModule="AutoInspector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="tLD-sW-W99" customClass="HomeViewController" customModule="AutoInspector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nxf-ER-C7y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
