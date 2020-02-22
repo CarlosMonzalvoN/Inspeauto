@@ -11,6 +11,9 @@
 		CC8EAA80EF529BBEEDD9B2EF /* Pods_AutoInspectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B877C0828D682D73F8A3B2DD /* Pods_AutoInspectorTests.framework */; };
 		D87F46D4E4E2931B8ABC0D92 /* Pods_AutoInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F0CDABFA790837E7455853 /* Pods_AutoInspector.framework */; };
 		DB3F9BA723F782E5009F981D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3F9BA623F782E5009F981D /* Constants.swift */; };
+		DB9380252401C495009A021F /* SugestEventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9380232401C495009A021F /* SugestEventCollectionViewCell.swift */; };
+		DB9380262401C495009A021F /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9380242401C495009A021F /* EventsViewController.swift */; };
+		DB9380292401C54D009A021F /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9380272401C54D009A021F /* Events.storyboard */; };
 		DBCD063023F5F96700EDA60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD062F23F5F96700EDA60D /* AppDelegate.swift */; };
 		DBCD063223F5F96700EDA60D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD063123F5F96700EDA60D /* SceneDelegate.swift */; };
 		DBCD063423F5F96700EDA60D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD063323F5F96700EDA60D /* ViewController.swift */; };
@@ -53,6 +56,9 @@
 		C4DDBC48B0A6F3F836DADF89 /* Pods-AutoInspector-AutoInspectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoInspector-AutoInspectorUITests.debug.xcconfig"; path = "Target Support Files/Pods-AutoInspector-AutoInspectorUITests/Pods-AutoInspector-AutoInspectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF5ADAE8E78AC0D34EEE7710 /* Pods-AutoInspectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoInspectorTests.release.xcconfig"; path = "Target Support Files/Pods-AutoInspectorTests/Pods-AutoInspectorTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB3F9BA623F782E5009F981D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB9380232401C495009A021F /* SugestEventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugestEventCollectionViewCell.swift; sourceTree = "<group>"; };
+		DB9380242401C495009A021F /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		DB9380282401C54D009A021F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Events.storyboard; sourceTree = "<group>"; };
 		DBCD062C23F5F96700EDA60D /* AutoInspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoInspector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCD062F23F5F96700EDA60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCD063123F5F96700EDA60D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				DBCD062F23F5F96700EDA60D /* AppDelegate.swift */,
+				DB9380272401C54D009A021F /* Events.storyboard */,
 				DBCD063123F5F96700EDA60D /* SceneDelegate.swift */,
 				DBCD063523F5F96700EDA60D /* Main.storyboard */,
 				DBFB9C0823F6AE65007C2A83 /* Helpers */,
@@ -188,6 +195,8 @@
 				DBCD063323F5F96700EDA60D /* ViewController.swift */,
 				DBCD065F23F5FAB200EDA60D /* SingUpViewController.swift */,
 				DBCD066123F5FACA00EDA60D /* LoginViewController.swift */,
+				DB9380232401C495009A021F /* SugestEventCollectionViewCell.swift */,
+				DB9380242401C495009A021F /* EventsViewController.swift */,
 				DBCD066323F5FAE000EDA60D /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
@@ -315,6 +324,7 @@
 				DBE2CB8823F75A21007BB6BC /* GoogleService-Info.plist in Resources */,
 				DBCD063923F5F96C00EDA60D /* Assets.xcassets in Resources */,
 				DBCD063723F5F96700EDA60D /* Main.storyboard in Resources */,
+				DB9380292401C54D009A021F /* Events.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,10 +456,12 @@
 				DBE2CB8623F6B083007BB6BC /* Styles.swift in Sources */,
 				DBCD063023F5F96700EDA60D /* AppDelegate.swift in Sources */,
 				DBCD066023F5FAB200EDA60D /* SingUpViewController.swift in Sources */,
+				DB9380252401C495009A021F /* SugestEventCollectionViewCell.swift in Sources */,
 				DBCD066223F5FACA00EDA60D /* LoginViewController.swift in Sources */,
 				DBCD063223F5F96700EDA60D /* SceneDelegate.swift in Sources */,
 				DBCD066423F5FAE000EDA60D /* HomeViewController.swift in Sources */,
 				DB3F9BA723F782E5009F981D /* Constants.swift in Sources */,
+				DB9380262401C495009A021F /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +497,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DB9380272401C54D009A021F /* Events.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB9380282401C54D009A021F /* Base */,
+			);
+			name = Events.storyboard;
+			sourceTree = "<group>";
+		};
 		DBCD063523F5F96700EDA60D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
