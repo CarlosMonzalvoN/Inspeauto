@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                       //Instanciamos el homeVC
-                                let homeViewController =  self.storyboard?.instantiateViewController(identifier: Constants.Storyboards.homeViewController) as? HomeViewController
+                                let homeViewController =  self.storyboard?.instantiateViewController(identifier: Constants.Storyboards.homeViewController) as? UITabBarController
                                   //Hacemos el HomeVC el rootVC ahora
                                   self.view.window?.rootViewController = homeViewController
                                   self.view.window?.makeKeyAndVisible()
