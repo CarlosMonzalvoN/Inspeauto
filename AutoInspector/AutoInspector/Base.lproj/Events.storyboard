@@ -69,7 +69,7 @@
                                                             <constraint firstAttribute="height" constant="161" id="3Ti-PW-2de"/>
                                                         </constraints>
                                                     </mapView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lomas Verdes Ciudad de México" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFI-Uc-WhJ" userLabel="Nombre Lugar">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jardines del Pedregal CDMX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFI-Uc-WhJ" userLabel="Nombre Lugar">
                                                         <rect key="frame" x="0.0" y="815.5" width="414" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="flM-14-S2S"/>
@@ -78,7 +78,7 @@
                                                         <color key="textColor" red="0.039215686270000001" green="0.23921568630000001" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Montecito 38, Nápoles, Benito Juárez, 03810 Ciudad de México, CDMX" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfk-rS-sZQ">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Av. Paseo del pedregal 206, Alvaro Obregon,01900 CDMX" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfk-rS-sZQ">
                                                         <rect key="frame" x="95" y="837.5" width="224" height="45"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
@@ -101,7 +101,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwm-hE-cyY">
-                                                        <rect key="frame" x="153.5" y="1026.5" width="107" height="27"/>
+                                                        <rect key="frame" x="128" y="1026.5" width="158" height="27"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="107" id="aP9-Vs-M5I"/>
@@ -109,7 +109,7 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                         <color key="tintColor" red="0.039215686270000001" green="0.23921568630000001" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <state key="normal" title="Seguir">
+                                                        <state key="normal" title="VW Taller Autorizado">
                                                             <color key="titleColor" red="0.0039215686269999999" green="0.086274509799999996" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                     </button>
@@ -203,13 +203,13 @@
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finanzas Explosivas." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-0U-9sD">
-                                                                            <rect key="frame" x="3" y="113" width="112" height="15"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-0U-9sD">
+                                                                            <rect key="frame" x="3" y="113" width="43.5" height="15"/>
                                                                             <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
                                                                             <color key="textColor" red="0.98823529409999999" green="0.52941176469999995" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 de Febrero 10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eK9-1C-FOm">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reparacion de Frenos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eK9-1C-FOm">
                                                                             <rect key="frame" x="3" y="96" width="114" height="15"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="15" id="q99-vc-Icv"/>

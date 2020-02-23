@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class EventsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
@@ -22,8 +23,12 @@ class EventsViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     //alerta
     let confirmAlert = UIAlertController(title: "Telefono", message: "El telefono de esta agencia es 55-23-45-67-89", preferredStyle: .alert)
-   // let ok = UIAlertAction(title: "Aceptar", style: .default)
     let cancel = UIAlertAction(title: "Cerrar", style: .cancel, handler: nil)
+  //Location manager
+    let locationManager = CLLocationManager()
+ // Localicaion del mapa
+    let pinAnottation = MKPointAnnotation()
+ 
     
 
 
@@ -45,6 +50,20 @@ class EventsViewController: UIViewController, UICollectionViewDataSource, UIColl
             eventUbicationMap.layer.shadowOpacity = 0.5
             eventUbicationMap.layer.shadowOffset = CGSize(width: 0, height: 3)
             
+        //Setting the map ubication
+        //Coordenadas para el mapa 19.328580, -99.198214
+            //el pin  lo colocamos en la longitud de nuestro taller
+            pinAnottation.coordinate = CLLocationCoordinate2D(latitude: 19.328580, longitude: -99.198214)
+            //Añadimos el pin al mapa
+            eventUbicationMap.addAnnotation(pinAnottation)
+            //Centraremos el mapa en una region
+            let region = MKCoordinateRegion(center: pinAnottation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
+            //Añadimos esa region al mapa
+            eventUbicationMap.setRegion(region, animated: true)
+            pinAnottation.title = "VW México taller Autorizado"
+            pinAnottation.subtitle = "Masters de la Reparacion"
+            
+            
         //Añadiendo acciones a los alerts
             confirmAlert.addAction(cancel)
         //Alerta anidada
@@ -55,6 +74,19 @@ class EventsViewController: UIViewController, UICollectionViewDataSource, UIColl
               innerAlert.addAction(UIAlertAction(title: "Aceptar", style: .default, handler:nil))
               self?.present(innerAlert, animated: true, completion: nil)
             }))
+            
+            
+            
+//        // para obtener la localizacion del usuario
+//            locationManager.requestWhenInUseAuthorization()
+//            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//            locationManager.distanceFilter = kCLDistanceFilterNone
+//            locationManager.startUpdatingLocation()
+//            eventUbicationMap.showsUserLocation = true
+            
+            
+         
+            
             
         
 
