@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hEW-Uw-fdz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Details View Controller-->
+        <scene sceneID="ndV-QR-7gm">
+            <objects>
+                <viewController id="hEW-Uw-fdz" customClass="DetailsViewController" customModule="AutoInspector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OAr-0T-Qvk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6s-IZ-bbk">
+                                <rect key="frame" x="157" y="567" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.086274509799999996" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MWB-tD-blb"/>
+                                    <constraint firstAttribute="width" constant="100" id="Rtc-gy-2wp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="Generar">
+                                    <color key="titleColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="generateBtn:" destination="Rym-E9-Ni2" eventType="touchUpInside" id="i2P-CZ-oHr"/>
+                                    <action selector="generateBtnTapped:" destination="hEW-Uw-fdz" eventType="touchUpInside" id="Pio-Iu-aQ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zt3-Zy-rSa" firstAttribute="bottom" secondItem="g6s-IZ-bbk" secondAttribute="bottom" constant="245" id="Dee-iW-Rtf"/>
+                            <constraint firstItem="g6s-IZ-bbk" firstAttribute="centerX" secondItem="Zt3-Zy-rSa" secondAttribute="centerX" id="QLf-YG-juI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zt3-Zy-rSa"/>
+                    </view>
+                    <connections>
+                        <outlet property="generateBtn" destination="g6s-IZ-bbk" id="1LC-qs-gc6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwy-EC-v94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Rym-E9-Ni2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+</document>

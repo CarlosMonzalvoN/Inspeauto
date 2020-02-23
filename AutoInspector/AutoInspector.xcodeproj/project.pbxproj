@@ -16,6 +16,8 @@
 		DB9380292401C54D009A021F /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9380272401C54D009A021F /* Events.storyboard */; };
 		DB93CA072401E5D9006D7499 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93CA062401E5D9006D7499 /* Colors.swift */; };
 		DB93CA0F2401F215006D7499 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB93CA0E2401F215006D7499 /* GoogleService-Info.plist */; };
+		DB93CA112402D672006D7499 /* DetailsPDF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB93CA102402D672006D7499 /* DetailsPDF.storyboard */; };
+		DB93CA132402D691006D7499 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93CA122402D691006D7499 /* DetailsViewController.swift */; };
 		DBCD063023F5F96700EDA60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD062F23F5F96700EDA60D /* AppDelegate.swift */; };
 		DBCD063223F5F96700EDA60D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD063123F5F96700EDA60D /* SceneDelegate.swift */; };
 		DBCD063423F5F96700EDA60D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD063323F5F96700EDA60D /* ViewController.swift */; };
@@ -62,6 +64,8 @@
 		DB9380282401C54D009A021F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Events.storyboard; sourceTree = "<group>"; };
 		DB93CA062401E5D9006D7499 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DB93CA0E2401F215006D7499 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB93CA102402D672006D7499 /* DetailsPDF.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsPDF.storyboard; sourceTree = "<group>"; };
+		DB93CA122402D691006D7499 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DBCD062C23F5F96700EDA60D /* AutoInspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoInspector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCD062F23F5F96700EDA60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCD063123F5F96700EDA60D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,8 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				DBCD062F23F5F96700EDA60D /* AppDelegate.swift */,
-				DB9380272401C54D009A021F /* Events.storyboard */,
 				DBCD063123F5F96700EDA60D /* SceneDelegate.swift */,
+				DB9380272401C54D009A021F /* Events.storyboard */,
+				DB93CA102402D672006D7499 /* DetailsPDF.storyboard */,
 				DBCD063523F5F96700EDA60D /* Main.storyboard */,
 				DBFB9C0823F6AE65007C2A83 /* Helpers */,
 				DBCD066523F5FAE700EDA60D /* ViewControllers */,
@@ -200,6 +205,7 @@
 				DB9380232401C495009A021F /* SugestEventCollectionViewCell.swift */,
 				DB9380242401C495009A021F /* EventsViewController.swift */,
 				DBCD066323F5FAE000EDA60D /* HomeViewController.swift */,
+				DB93CA122402D691006D7499 /* DetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 				DBCD063923F5F96C00EDA60D /* Assets.xcassets in Resources */,
 				DB93CA0F2401F215006D7499 /* GoogleService-Info.plist in Resources */,
 				DBCD063723F5F96700EDA60D /* Main.storyboard in Resources */,
+				DB93CA112402D672006D7499 /* DetailsPDF.storyboard in Resources */,
 				DB9380292401C54D009A021F /* Events.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +473,7 @@
 				DBCD066423F5FAE000EDA60D /* HomeViewController.swift in Sources */,
 				DB3F9BA723F782E5009F981D /* Constants.swift in Sources */,
 				DB9380262401C495009A021F /* EventsViewController.swift in Sources */,
+				DB93CA132402D691006D7499 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,17 +18,18 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
         
        
     }
     
 
     @IBAction func transitionToEvents(_ sender: Any) {
-        
+    //Creamos una variable que almacenara nuestro storyboard
         let nextViewController = evStoryBoard.instantiateViewController(withIdentifier: "eventsVC") as! EventsViewController
+    //Configuramos el tipo de presentacion que queremos, en este caso será a pantalla completa y no modal
         nextViewController.modalPresentationStyle = .fullScreen
-               
+    //Presentamos el Storyboard
         self.present(nextViewController,animated:true,completion: nil)
         
     }
