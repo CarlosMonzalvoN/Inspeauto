@@ -21,6 +21,8 @@
 		DB93CA072401E5D9006D7499 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93CA062401E5D9006D7499 /* Colors.swift */; };
 		DB93CA112402D672006D7499 /* DetailsPDF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB93CA102402D672006D7499 /* DetailsPDF.storyboard */; };
 		DB93CA132402D691006D7499 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93CA122402D691006D7499 /* DetailsViewController.swift */; };
+		DBC233ED2403330000C74EEE /* pdfPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC233EC2403330000C74EEE /* pdfPreviewViewController.swift */; };
+		DBC233EF2403382600C74EEE /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC233EE2403382600C74EEE /* PDFCreator.swift */; };
 		DBCD063023F5F96700EDA60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD062F23F5F96700EDA60D /* AppDelegate.swift */; };
 		DBCD063223F5F96700EDA60D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD063123F5F96700EDA60D /* SceneDelegate.swift */; };
 		DBCD063423F5F96700EDA60D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD063323F5F96700EDA60D /* ViewController.swift */; };
@@ -72,6 +74,8 @@
 		DB93CA062401E5D9006D7499 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DB93CA102402D672006D7499 /* DetailsPDF.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsPDF.storyboard; sourceTree = "<group>"; };
 		DB93CA122402D691006D7499 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DBC233EC2403330000C74EEE /* pdfPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pdfPreviewViewController.swift; sourceTree = "<group>"; };
+		DBC233EE2403382600C74EEE /* PDFCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
 		DBCD062C23F5F96700EDA60D /* AutoInspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoInspector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCD062F23F5F96700EDA60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCD063123F5F96700EDA60D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 				DB9380242401C495009A021F /* EventsViewController.swift */,
 				DBCD066323F5FAE000EDA60D /* HomeViewController.swift */,
 				DB93CA122402D691006D7499 /* DetailsViewController.swift */,
+				DBC233EC2403330000C74EEE /* pdfPreviewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				DBE2CB8523F6B083007BB6BC /* Styles.swift */,
 				DB3F9BA623F782E5009F981D /* Constants.swift */,
 				DB93CA062401E5D9006D7499 /* Colors.swift */,
+				DBC233EE2403382600C74EEE /* PDFCreator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -491,6 +497,7 @@
 				6C03373C240316F300D47E95 /* AutomobileTableViewCell.swift in Sources */,
 				DB93CA072401E5D9006D7499 /* Colors.swift in Sources */,
 				DBE2CB8623F6B083007BB6BC /* Styles.swift in Sources */,
+				DBC233ED2403330000C74EEE /* pdfPreviewViewController.swift in Sources */,
 				DBCD063023F5F96700EDA60D /* AppDelegate.swift in Sources */,
 				DBCD066023F5FAB200EDA60D /* SingUpViewController.swift in Sources */,
 				DB9380252401C495009A021F /* SugestEventCollectionViewCell.swift in Sources */,
@@ -498,6 +505,7 @@
 				DBCD066223F5FACA00EDA60D /* LoginViewController.swift in Sources */,
 				DBCD063223F5F96700EDA60D /* SceneDelegate.swift in Sources */,
 				DBCD066423F5FAE000EDA60D /* HomeViewController.swift in Sources */,
+				DBC233EF2403382600C74EEE /* PDFCreator.swift in Sources */,
 				DB3F9BA723F782E5009F981D /* Constants.swift in Sources */,
 				DB9380262401C495009A021F /* EventsViewController.swift in Sources */,
 				6C0337452403190600D47E95 /* UIImageView+extension.swift in Sources */,
