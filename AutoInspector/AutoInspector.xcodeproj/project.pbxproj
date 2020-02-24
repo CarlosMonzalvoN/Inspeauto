@@ -12,6 +12,8 @@
 		6C0337452403190600D47E95 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0337442403190600D47E95 /* UIImageView+extension.swift */; };
 		6C0337472403190D00D47E95 /* AutomobileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0337462403190D00D47E95 /* AutomobileModel.swift */; };
 		6C03374924031C2900D47E95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C03374824031C2900D47E95 /* GoogleService-Info.plist */; };
+		6C0342BB24038169007E03FD /* ClientDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0342BA24038169007E03FD /* ClientDetailsViewController.swift */; };
+		6C0342BD2403817B007E03FD /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0342BC2403817B007E03FD /* ClientModel.swift */; };
 		CC8EAA80EF529BBEEDD9B2EF /* Pods_AutoInspectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B877C0828D682D73F8A3B2DD /* Pods_AutoInspectorTests.framework */; };
 		D87F46D4E4E2931B8ABC0D92 /* Pods_AutoInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F0CDABFA790837E7455853 /* Pods_AutoInspector.framework */; };
 		DB3F9BA723F782E5009F981D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3F9BA623F782E5009F981D /* Constants.swift */; };
@@ -61,6 +63,8 @@
 		6C0337442403190600D47E95 /* UIImageView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		6C0337462403190D00D47E95 /* AutomobileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomobileModel.swift; sourceTree = "<group>"; };
 		6C03374824031C2900D47E95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6C0342BA24038169007E03FD /* ClientDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDetailsViewController.swift; sourceTree = "<group>"; };
+		6C0342BC2403817B007E03FD /* ClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
 		733BF1611B2D016B2F8DAE97 /* Pods-AutoInspectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoInspectorTests.debug.xcconfig"; path = "Target Support Files/Pods-AutoInspectorTests/Pods-AutoInspectorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB55A453802ED189DDB7DCE2 /* Pods-AutoInspector-AutoInspectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoInspector-AutoInspectorUITests.release.xcconfig"; path = "Target Support Files/Pods-AutoInspector-AutoInspectorUITests/Pods-AutoInspector-AutoInspectorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B853743641582460FD1641E0 /* Pods_AutoInspector_AutoInspectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoInspector_AutoInspectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +155,7 @@
 		6C033742240318AC00D47E95 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6C0342BC2403817B007E03FD /* ClientModel.swift */,
 				6C0337462403190D00D47E95 /* AutomobileModel.swift */,
 			);
 			path = Models;
@@ -227,6 +232,7 @@
 		DBCD066523F5FAE700EDA60D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6C0342BA24038169007E03FD /* ClientDetailsViewController.swift */,
 				6C03373B240316F300D47E95 /* AutomobileTableViewCell.swift */,
 				DBCD063323F5F96700EDA60D /* ViewController.swift */,
 				DBCD065F23F5FAB200EDA60D /* SingUpViewController.swift */,
@@ -507,6 +513,8 @@
 				DBCD066423F5FAE000EDA60D /* HomeViewController.swift in Sources */,
 				DBC233EF2403382600C74EEE /* PDFCreator.swift in Sources */,
 				DB3F9BA723F782E5009F981D /* Constants.swift in Sources */,
+				6C0342BD2403817B007E03FD /* ClientModel.swift in Sources */,
+				6C0342BB24038169007E03FD /* ClientDetailsViewController.swift in Sources */,
 				DB9380262401C495009A021F /* EventsViewController.swift in Sources */,
 				6C0337452403190600D47E95 /* UIImageView+extension.swift in Sources */,
 				DB93CA132402D691006D7499 /* DetailsViewController.swift in Sources */,

@@ -12,9 +12,8 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     let evStoryBoard = UIStoryboard(name: "Events", bundle: nil)
-
-    @IBOutlet weak var transitionBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     var automobile : [[AutomobileModel]] = []
     
@@ -56,11 +55,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AutomobileTableViewCell.identifier, for: indexPath)  as? AutomobileTableViewCell
         cell?.updateCell(automobile: automobile[indexPath.row][0])
-        //tableView.layoutMargins.bottom = CGFloat(20.0)
         return cell ?? UITableViewCell()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 162.0
+        return 200.0
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
