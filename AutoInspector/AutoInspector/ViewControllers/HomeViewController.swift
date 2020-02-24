@@ -22,6 +22,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.backgroundColor = .clear
         loadData()
     }
     
@@ -59,16 +60,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell ?? UITableViewCell()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110.0
+        return 162.0
     }
     
-    @IBAction func transitionToEvents(_ sender: Any) {
-    //Creamos una variable que almacenara nuestro storyboard
-        let nextViewController = evStoryBoard.instantiateViewController(withIdentifier: "eventsVC") as! EventsViewController
-    //Configuramos el tipo de presentacion que queremos, en este caso será a pantalla completa y no modal
-        nextViewController.modalPresentationStyle = .fullScreen
-    //Presentamos el Storyboard
-        self.present(nextViewController,animated:true,completion: nil)
-        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Creamos una variable que almacenara nuestro storyboard
+            let nextViewController = evStoryBoard.instantiateViewController(withIdentifier: "eventsVC") as! EventsViewController
+        //Configuramos el tipo de presentacion que queremos, en este caso será a pantalla completa y no modal
+            nextViewController.modalPresentationStyle = .fullScreen
+        //Presentamos el Storyboard
+            self.present(nextViewController,animated:true,completion: nil)
     }
 }
