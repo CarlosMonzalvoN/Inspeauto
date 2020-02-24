@@ -105,6 +105,13 @@ class DetailsViewController: UIViewController {
         
     }//EndfuncGenerateButtonTapped
     
+    
+    @IBAction func backArrowBtnTapped(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     @IBAction func selectImageTouched(_ sender: Any) {
       let actionSheet = UIAlertController(title: "Select Photo", message: "Where do you want to select a photo?", preferredStyle: .actionSheet)
       
@@ -151,6 +158,9 @@ class DetailsViewController: UIViewController {
         }
       }
     }
+    
+    
+    
     
 
 }

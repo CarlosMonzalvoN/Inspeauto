@@ -18,6 +18,8 @@ class ClientDetailsViewController: UIViewController {
     
     var client : ClientModel = ClientModel()
     
+    let detailsVC = UIStoryboard(name: "DetailsPDF", bundle: nil)
+    
     func loadData(){
         let db = Firestore.firestore()
         let userID = Auth.auth().currentUser?.uid ?? ""
@@ -53,5 +55,14 @@ class ClientDetailsViewController: UIViewController {
             self.clientImageView.load(self.client.photoUrl ?? "")
         }
     }
+    
+    
+    @IBAction func generateCitaBtnTapped(_ sender: Any) {
+        let nextViewController = detailsVC.instantiateViewController(identifier: "DetailsVC") as! DetailsViewController
+        nextViewController.modalPresentationStyle = .fullScreen
+        self.present(nextViewController, animated: true, completion: nil)
+        
+    }
+    
     
 }

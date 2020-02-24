@@ -10,7 +10,7 @@
         <!--Details View Controller-->
         <scene sceneID="ndV-QR-7gm">
             <objects>
-                <viewController id="hEW-Uw-fdz" customClass="DetailsViewController" customModule="AutoInspector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsVC" id="hEW-Uw-fdz" customClass="DetailsViewController" customModule="AutoInspector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OAr-0T-Qvk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,6 +138,17 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alm-wK-eCc">
+                                        <rect key="frame" x="16" y="-17" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Tl5-JO-1o1"/>
+                                            <constraint firstAttribute="width" constant="35" id="wjK-b3-hde"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="left-arrow"/>
+                                        <connections>
+                                            <action selector="backArrowBtnTapped:" destination="hEW-Uw-fdz" eventType="touchUpInside" id="f3h-Xv-Ldz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.75806927580000005" green="0.98781219499999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -145,6 +156,8 @@
                                     <constraint firstItem="gEG-gZ-Uwo" firstAttribute="leading" secondItem="vXJ-tr-YFY" secondAttribute="leading" constant="26" id="6Yi-uU-YMg"/>
                                     <constraint firstAttribute="bottom" secondItem="hVa-Yd-tHi" secondAttribute="bottom" constant="40" id="ADT-oZ-IG6"/>
                                     <constraint firstItem="uF1-oC-I3G" firstAttribute="top" secondItem="IiL-s9-Xxt" secondAttribute="bottom" constant="24" id="Bor-qF-sVe"/>
+                                    <constraint firstItem="JXl-n3-hfh" firstAttribute="top" secondItem="alm-wK-eCc" secondAttribute="bottom" constant="8" id="CxE-am-LOn"/>
+                                    <constraint firstItem="alm-wK-eCc" firstAttribute="leading" secondItem="vXJ-tr-YFY" secondAttribute="leading" constant="16" id="DAs-96-Hc0"/>
                                     <constraint firstItem="hVa-Yd-tHi" firstAttribute="leading" secondItem="Td1-yI-pM7" secondAttribute="trailing" constant="22" id="FUI-KU-5zP"/>
                                     <constraint firstItem="hVa-Yd-tHi" firstAttribute="top" secondItem="uaH-vv-RuS" secondAttribute="bottom" constant="8" id="HYR-dd-juf"/>
                                     <constraint firstItem="Td1-yI-pM7" firstAttribute="leading" secondItem="vXJ-tr-YFY" secondAttribute="leading" constant="26" id="Hzt-Fy-6sz"/>
@@ -160,6 +173,7 @@
                                     <constraint firstItem="uaH-vv-RuS" firstAttribute="top" secondItem="IiL-s9-Xxt" secondAttribute="bottom" constant="53" id="inP-si-yrH"/>
                                     <constraint firstItem="IiL-s9-Xxt" firstAttribute="top" secondItem="gEG-gZ-Uwo" secondAttribute="bottom" constant="23" id="kNq-Bl-9M4"/>
                                     <constraint firstItem="gEG-gZ-Uwo" firstAttribute="top" secondItem="JXl-n3-hfh" secondAttribute="bottom" constant="20" id="kZ6-A5-7FR"/>
+                                    <constraint firstItem="JXl-n3-hfh" firstAttribute="leading" secondItem="alm-wK-eCc" secondAttribute="trailing" constant="-25" id="mJw-pI-d7C"/>
                                     <constraint firstItem="cug-1e-gGf" firstAttribute="leading" secondItem="vXJ-tr-YFY" secondAttribute="leading" constant="25" id="qez-LX-SQK"/>
                                     <constraint firstItem="uF1-oC-I3G" firstAttribute="leading" secondItem="IiL-s9-Xxt" secondAttribute="leading" id="t11-WH-YXZ"/>
                                     <constraint firstAttribute="trailing" secondItem="IiL-s9-Xxt" secondAttribute="trailing" constant="18" id="v3v-L6-f6L"/>
@@ -267,4 +281,7 @@
             <point key="canvasLocation" x="714.49275362318849" y="90.401785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="left-arrow" width="512" height="512"/>
+    </resources>
 </document>

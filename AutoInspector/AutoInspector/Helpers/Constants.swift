@@ -14,5 +14,6 @@ struct Constants {
         
        static let homeViewController = "HomeVC"
         static let eventsVC = "eventsVC"
+        static let DetailsVC = "DetailsVC"
     }
 }
