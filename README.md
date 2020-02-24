@@ -17,3 +17,15 @@ After register or introduce your credentials you can scroll your cars that are i
 
 ## Schedule for review
 You can schedule for review your car in workshop, how much will the repair cost and what different services you can request
+
+<img src="https://raw.githubusercontent.com/CarlosMonzalvoN/Inspeauto/master/Photos/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-02-23%20at%2023.38.04.png" width="150" height="300">
+
+<img src="https://raw.githubusercontent.com/CarlosMonzalvoN/Inspeauto/master/Photos/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-02-23%20at%2023.38.10.png" width="150" height="300">
+
+## Information
+
+Also you will know about the workshop, their location, prices, what services do you have, etc.
+
+<img src="https://raw.githubusercontent.com/CarlosMonzalvoN/Inspeauto/master/Photos/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-02-23%20at%2022.34.03.png" width="150" height="300">
+
+<img src="https://raw.githubusercontent.com/CarlosMonzalvoN/Inspeauto/master/Photos/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-02-23%20at%2022.34.13.png" width="150" height="300">
