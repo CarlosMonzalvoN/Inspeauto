@@ -30,23 +30,28 @@ class ClientDetailsViewController: UIViewController {
                     let decoder = JSONDecoder()
                     for document in querySnapshot!.documents {
                         if let data = try?  JSONSerialization.data(withJSONObject: document.data(), options: []) {
-                            let client = try? decoder.decode(ClientModel.self, from: data)
-                            self.client.name = client?.name
-                            self.client.lastname = client?.lastname
-                            self.client.photoUrl = client?.photoUrl
+                            guard let client = try? decoder.decode(ClientModel.self, from: data) else { return }
+                            self.client = client
+                            self.updateUI()
                         }
                     }
                 }
         }
-        name.text = client.name
-        lastname.text = client.lastname
-        clientImageView.load(client.photoUrl ?? "")
-        print(client)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         clientImageView.setRounded()
         loadData()
+    }
+    
+    private func updateUI(){
+        DispatchQueue.main.async {
+            self.name.text = self.client.name
+            self.lastname.text = self.client.lastname
+            self.clientImageView.load(self.client.photoUrl ?? "")
+        }
     }
     
 }
