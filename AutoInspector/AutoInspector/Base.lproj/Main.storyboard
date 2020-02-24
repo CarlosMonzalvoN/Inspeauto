@@ -373,20 +373,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicita una cita en nuestro taller para  hacer una revision o entrega de tu auto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vw-eY-Fx0">
+                                <rect key="frame" x="77" y="666" width="261" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="FCy-zP-QYb"/>
+                                    <constraint firstAttribute="height" constant="101" id="JuJ-qH-qRv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xx9-92-ODs" firstAttribute="top" secondItem="8oS-12-hHL" secondAttribute="top" constant="116" id="10s-qM-Iiw"/>
                             <constraint firstItem="fWp-7w-sFW" firstAttribute="leading" secondItem="8oS-12-hHL" secondAttribute="leading" constant="42" id="7NW-Bi-hVK"/>
                             <constraint firstItem="gUm-Bu-0pq" firstAttribute="top" secondItem="xx9-92-ODs" secondAttribute="bottom" constant="50" id="7ns-mS-aBj"/>
+                            <constraint firstItem="3Vw-eY-Fx0" firstAttribute="top" secondItem="E9l-kK-TzZ" secondAttribute="bottom" constant="47" id="84H-NF-rlv"/>
                             <constraint firstItem="gUm-Bu-0pq" firstAttribute="centerX" secondItem="Brk-X0-FOf" secondAttribute="centerX" id="EM9-Jo-FS6"/>
+                            <constraint firstItem="8oS-12-hHL" firstAttribute="trailing" secondItem="3Vw-eY-Fx0" secondAttribute="trailing" constant="76" id="VlL-9v-Ihr"/>
                             <constraint firstItem="8oS-12-hHL" firstAttribute="bottom" secondItem="E9l-kK-TzZ" secondAttribute="bottom" constant="194" id="Y0F-xE-DWJ"/>
+                            <constraint firstItem="3Vw-eY-Fx0" firstAttribute="leading" secondItem="8oS-12-hHL" secondAttribute="leading" constant="77" id="bvg-1i-oou"/>
                             <constraint firstItem="Brk-X0-FOf" firstAttribute="centerX" secondItem="xx9-92-ODs" secondAttribute="centerX" id="dvh-wJ-QbK"/>
                             <constraint firstItem="fWp-7w-sFW" firstAttribute="top" secondItem="8oS-12-hHL" secondAttribute="top" constant="23" id="fcb-vp-C0h"/>
                             <constraint firstItem="E9l-kK-TzZ" firstAttribute="leading" secondItem="8oS-12-hHL" secondAttribute="leading" constant="136" id="k7R-Nc-61C"/>
                             <constraint firstItem="xx9-92-ODs" firstAttribute="centerX" secondItem="bhx-fP-dEy" secondAttribute="centerX" id="kme-iV-Szg"/>
                             <constraint firstItem="Brk-X0-FOf" firstAttribute="centerX" secondItem="bhx-fP-dEy" secondAttribute="centerX" id="nBr-g8-zqU"/>
                             <constraint firstItem="xx9-92-ODs" firstAttribute="leading" secondItem="8oS-12-hHL" secondAttribute="leading" constant="147" id="nQb-GI-cjh"/>
+                            <constraint firstItem="8oS-12-hHL" firstAttribute="bottom" secondItem="3Vw-eY-Fx0" secondAttribute="bottom" constant="46" id="pyC-9f-IHN"/>
                             <constraint firstItem="8oS-12-hHL" firstAttribute="bottom" secondItem="Brk-X0-FOf" secondAttribute="bottom" constant="408" id="qy2-RW-AoX"/>
                             <constraint firstItem="Brk-X0-FOf" firstAttribute="top" secondItem="gUm-Bu-0pq" secondAttribute="bottom" constant="33" id="vhN-GQ-LUj"/>
                             <constraint firstItem="E9l-kK-TzZ" firstAttribute="top" secondItem="Brk-X0-FOf" secondAttribute="bottom" constant="169" id="wS0-lA-Pi2"/>
