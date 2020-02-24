@@ -14,6 +14,7 @@ class AutomobileTableViewCell: UITableViewCell {
     @IBOutlet weak var model: UILabel!
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var licensePlate: UILabel!
+    @IBOutlet weak var status: UILabel!
     
     static let identifier = "automobileCell"
     
@@ -22,6 +23,7 @@ class AutomobileTableViewCell: UITableViewCell {
         model.text = automobile.model
         year.text = automobile.year
         licensePlate.text = automobile.license_plate
+        status.text = automobile.status
     }
     
 }

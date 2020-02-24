@@ -16,6 +16,7 @@ struct AutomobileModel: Decodable {
     var photoUrl : String?
     var uid : String!
     var year : String?
+    var status : String?
     
     enum CodingKeys: String, CodingKey{
         case brand = "brand"
@@ -25,5 +26,6 @@ struct AutomobileModel: Decodable {
         case photoUrl = "photo"
         case uid = "uid"
         case year = "year"
+        case status = "status"
     }
 }
